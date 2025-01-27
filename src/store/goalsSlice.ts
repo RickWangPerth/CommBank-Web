@@ -26,6 +26,7 @@ export const goalsSlice = createSlice({
     },
 
     updateGoal: (state, action: PayloadAction<Goal>) => {
+      //console.log('Updating goal in reducer:', action.payload)
       state.map[action.payload.id] = action.payload
     },
   },
